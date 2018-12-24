@@ -1,1 +1,15 @@
 react-native-demo test
+android环境 ：
+安装的java sdk版本不能大于9，主流是8
+Android文件下创建文件 local.properties ,内容 sdk.dir = /Users/admin/Library/Android/sdk
+android/gradle/wrapper文件夹下面增加gradle-4.4-all.zip，然后在wrapper/gradle-wrapper.properties下修改distributionUrl=/gradle-4.4-all.zip，避免翻墙连接慢、断开的问题
+启动ios手机指定版本 react-native run-ios --simulator "iPhone 7”
+
+路由报错 React-navigation
+undefined is not a function (evaluating'_reactNavigation.StackNavigator....')
+或者 React Native - undefined is not an object(evaluating 'RNGestureHandlerModule.state')
+或者 Cannot read property 'State' of undefined
+解决方法： 执行命令 react-native link
+参考： http://www.cnblogs.com/wuvkcyan/p/10011012.html
+
+调试 android command+M ,刷新 double r
